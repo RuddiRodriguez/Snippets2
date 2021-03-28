@@ -1,3 +1,9 @@
+"""
+Script to estimated a base line of the model
+based on a dummy classifier 
+"""
+
+
 # Load libraries
 from sklearn.dummy import DummyClassifier
 from sklearn.model_selection import train_test_split
