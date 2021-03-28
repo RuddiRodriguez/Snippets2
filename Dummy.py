@@ -1,6 +1,12 @@
 """
 Script to estimated a base line of the model
-based on a dummy classifier 
+based on a dummy classifier
+Example :
+# Load data
+iris = load_iris()
+# Create target vector and feature matrix
+features, target = iris.data, iris.target
+dummy_classifier(features, target)
 """
 
 
