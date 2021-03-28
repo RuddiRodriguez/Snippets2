@@ -20,7 +20,7 @@ def dummy_classifier(features, target):
     features_train, features_test, target_train, target_test = train_test_split(
         features, target, random_state=0)
     # Create dummy classifier
-    dummy = DummyClassifier(strategy='uniform', random_state=1)
+    dummy = DummyClassifier(strategy='stratified', random_state=1)
     # "Train" model
     dummy.fit(features_train, target_train)
     # Get accuracy score
